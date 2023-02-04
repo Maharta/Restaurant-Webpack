@@ -3,6 +3,7 @@
 
 :root {
   --background-dark: rgba(0, 0, 0, 0.7);
+  --header-height: 150px;
 }
 
 #content {
@@ -19,7 +20,7 @@
   justify-content: center;
   color: white;
   background-color: var(--background-dark);
-  height: 150px;
+  height: var(--header-height);
   gap: 10px;
 }
 
@@ -73,6 +74,7 @@ div.hero {
   padding-block: 1rem;
   max-width: 741px;
   text-align: center;
+  min-height: 500px;
 }
 
 div.hero.flex {
