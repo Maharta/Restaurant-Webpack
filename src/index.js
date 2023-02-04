@@ -5,11 +5,13 @@ import renderMenuTab from './tabs/menu';
 
 renderHomeTab();
 
-const homeLink = document.querySelector('nav li[data-text="Home"]');
+const homeLink = document.querySelector('nav li button[data-text="Home"]');
 homeLink.addEventListener('click', renderHomeTab);
 
-const contactLink = document.querySelector('nav li[data-text="Contact"]');
+const contactLink = document.querySelector(
+  'nav li button[data-text="Contact"]'
+);
 contactLink.addEventListener('click', renderContactTab);
 
-const menuLink = document.querySelector('nav li[data-text="Menu"]');
+const menuLink = document.querySelector('nav li button[data-text="Menu"]');
 menuLink.addEventListener('click', renderMenuTab);

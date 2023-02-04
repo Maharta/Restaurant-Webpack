@@ -30,21 +30,24 @@
   font-size: 4rem;
 }
 
-.header nav {
+.header ul {
   display: flex;
   gap: 3rem;
   list-style-type: none;
   justify-content: center;
 }
 
-.header nav li {
+.header nav li button {
   font-size: 1.1rem;
+  border: none;
+  color: white;
   cursor: pointer;
   position: relative;
   text-align: center;
+  background: none;
 }
 
-.header nav li::after {
+.header nav li button::after {
   display: block;
   content: attr(data-text);
   font-weight: bold;
@@ -53,8 +56,8 @@
   visibility: hidden;
 }
 
-.header nav li:hover,
-.header nav li:focus {
+.header nav li button:hover,
+.header nav li button:focus {
   font-weight: bolder;
 }
 
@@ -105,6 +108,16 @@ div.hero.flex {
   color: white;
   text-align: center;
   padding-block: 8px;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer p a:hover,
+.footer p a:focus {
+  font-weight: bold;
 }
 
 /* Menu Page */
