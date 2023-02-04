@@ -3,7 +3,7 @@ import PorkRamenImg from '../assets/pork-ramen.jpg';
 import PorkChopsImg from '../assets/pork-chops.jpg';
 import PorkEggsImg from '../assets/pork-eggs.jpg';
 import PorkBurntImg from '../assets/pork-burnt.jpg';
-import getContentAndHeroDiv from '../utils/getContentAndHeroDiv';
+import getMainAndHeroDiv from '../utils/getMainAndHeroDiv';
 
 const menus = [
   {
@@ -29,7 +29,7 @@ const menus = [
 ];
 
 export default function renderMenuTab() {
-  const { contentDiv, currentHeroDiv } = getContentAndHeroDiv();
+  const { main, currentHeroDiv } = getMainAndHeroDiv();
   currentHeroDiv.remove();
 
   const newHero = document.createElement('div');
@@ -44,5 +44,5 @@ export default function renderMenuTab() {
   menuGrid.append(...itemDivs);
   newHero.appendChild(menuGrid);
 
-  contentDiv.appendChild(newHero);
+  main.appendChild(newHero);
 }

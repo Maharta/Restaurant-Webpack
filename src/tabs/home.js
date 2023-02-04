@@ -1,8 +1,8 @@
 import gordonPortrait from '../assets/gordo.jpg';
-import getContentAndHeroDiv from '../utils/getContentAndHeroDiv';
+import getMainAndHeroDiv from '../utils/getMainAndHeroDiv';
 
 export default function renderHomeTab() {
-  const { contentDiv, currentHeroDiv } = getContentAndHeroDiv();
+  const { main, currentHeroDiv } = getMainAndHeroDiv();
   if (currentHeroDiv) currentHeroDiv.remove();
 
   const newHero = document.createElement('div');
@@ -22,5 +22,5 @@ export default function renderHomeTab() {
   lastP.textContent = 'Come here now or gordo will be mad!';
 
   newHero.append(firstp, secondP, gordonImage, lastP);
-  contentDiv.appendChild(newHero);
+  main.appendChild(newHero);
 }
