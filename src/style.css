@@ -7,9 +7,9 @@
 
 #content {
   height: 100%;
-  background: url('./assets/nasi-background.jpg') no-repeat;
-  background-size: cover;
+  background: url('./assets/sausage-background.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .header {
